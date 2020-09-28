@@ -1,0 +1,294 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* logo dimension in navigation bar*/
+#logo {
+	width: 50px;
+	height: 45px;
+	left: 0px;
+	top: 0px;
+}
+
+
+/*inline navigation bar*/
+li {
+  display: inline;
+}
+
+/*nav bar text style*/
+.nav{
+	text-decoration: none;
+	font-size: 22px;
+	padding-left: 5px;
+	color: #A485B5;
+}
+
+/*aligning logo on nav bar*/
+#logo_spacing{
+	padding-left: 790px;
+}
+
+/*aligining text in nav bar*/
+#nav_spacing{
+	padding-left:20px;
+}
+
+/*hide the horizontal overflowed content/ hide horizontal scrolling*/
+body{
+	overflow-x: hidden;
+}
+
+
+/*Main page background image dimensions*/		
+.background{
+	padding-bottom:13px;
+	width: 1345px;
+	height: 530px;
+}
+
+/*positioning main header text on main cover image*/		
+.centered {
+  	position: absolute;
+	color: white;
+	aligned: center;
+	font-size: 3.95em;
+	top: 45%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+/*positioning main header text on main cover image - second line*/		
+.centered2{
+	position: absolute;
+	color: white;
+	aligned: center;
+	font-size: 3.95em;
+	top: 55%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+/*positioning subtitled text on main cover image*/
+.bottom{
+	position: absolute;
+	color:floralwhite;
+	aligned: center;
+	font-size: 1.5em;
+	top: 87%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+/*triangle to indicate the scrollable webpage*/
+#triangle-down {
+	width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #9982AB;
+}
+
+/*positioning triangle in box to manipulate position on screen*/
+.box{
+	padding-left: 660px;
+
+}
+
+/*remove the text decoration from about section afte rsetting up linking on pages*/
+#about_section{
+	text-decoration: none;
+	color: black;
+}
+
+/*remove the text decoration from thoughts section afte rsetting up linking on pages*/
+#quotes_slider{
+	text-decoration: none;
+	color: black;
+}
+
+/*remove the text decoration from team info section afte rsetting up linking on pages*/
+#team_info{
+	text-decoration: none;
+	color: black;
+}
+
+/*border decoration around about section*/
+.about-container{
+	border: 40px solid #9982AB;
+}
+
+/*positioning text in about section*/
+.about{
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+/*border decoration around film player*/
+.viewer{
+	border:medium solid #9982AB;
+	padding-top: 4px;
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-bottom: 4px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+ 	position: relative;
+}
+
+/* Slides */
+.mySlides {
+  	display: none;
+  	padding: 100px;
+  	text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  	cursor: pointer;
+  	position: absolute;
+  	top: 50%;
+  	width: auto;
+  	margin-top: -30px;
+  	padding: 16px;
+  	color: #888;
+  	font-weight: bold;
+  	font-size: 20px;
+  	border-radius: 0 3px 3px 0;
+  	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  	position: absolute;
+  	right: 0;
+  	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  	background-color: #B9ADC1;
+  	color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  	text-align: center;
+ 	padding: 20px;
+  	background: #9987A0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  	cursor: pointer;
+  	height: 15px;
+ 	width: 15px;
+  	margin: 0 2px;
+  	background-color: #A4A0A8;
+  	border-radius: 50%;
+  	display: inline-block;
+  	transition: background-color 1s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  	background-color: #FFFFFF;
+}
+
+/* Add font style,size and color to all quotes */
+q {
+	font-style: italic;
+	font-size: 1.75em;
+	color: #9987A0;
+}
+
+/* size the author name */
+.author {
+	font-size: 1.05em;
+}
+
+/*meet the makers section*/
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/*meet the makers section divided into 4 columns*/
+.column {
+	float: left;
+  	width: 23.75%;
+  	margin-bottom: 16px;
+  	padding: 0 8px;
+}
+
+/*meet the makers section size dimensions per person*/
+@media screen and (max-width: 650px) {
+	.column {
+		width: 100%;
+    	display: block;
+	}
+}
+
+/*adding color to names*/
+.names{
+	color: floralwhite; 
+}
+
+/*addind font color and style to emails*/
+.emails{
+	color: aliceblue;
+	align-items: center;
+}
+
+/*maker's info card's background color and card decoration e.g. shadow*/
+.card {
+	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+	background-color: #887C9C;
+}
+
+/*meet the makers section*/
+.container {
+	padding: 0 16px;
+}
+
+/*meet the makers section*/
+.container::after, .row::after {
+  	content: "";
+  	clear: both;
+  	display: table;
+}
+
+/*bio section text style and alignment*/
+.bio{
+	width: 280px;
+	text-align: justify;
+	color: whitesmoke;
+	
+}
+
+/*scroll to top button dimensions and styling*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: #9987A0;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+/*scroll to top button hover styling*/
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*section title font size*/
+h3{
+	font-size: 1.75em;
+}
